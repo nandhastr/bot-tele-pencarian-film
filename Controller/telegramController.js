@@ -1,0 +1,29 @@
+import startCommand from "../commands/start.js";
+import tulungCommand from "../commands/tulung.js";
+import sahamanehCommand from "../commands/sahamaneh.js";
+import nandaCommand from "../commands/nanda.js";
+import searchMovieCommand from "../commands/searchMovie.js";
+
+
+
+export const telegramController = (bot) => {
+    bot.on("message", async (msg) => {
+
+        const chatId = msg.chat.id;
+        const text = msg.text.toLocaleLowerCase();
+
+        switch (text) {
+            case "/start":
+                return startCommand(bot, chatId);
+            case "/tulung":
+                return tulungCommand(bot, chatId);
+            case "/sahamaneh":
+                return sahamanehCommand(bot, chatId);
+            case "/nanda":
+                return nandaCommand(bot, chatId);
+            default:
+                return searchMovieCommand(bot, chatId, text);
+        }
+
+     })
+}

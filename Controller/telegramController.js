@@ -11,7 +11,7 @@ export const telegramController = (bot) => {
 
         const chatId = msg.chat.id;
         const text = msg.text.toLocaleLowerCase();
-
+        console.log("Pesan masuk:", msg);
         switch (text) {
             case "/start":
                 return startCommand(bot, chatId);

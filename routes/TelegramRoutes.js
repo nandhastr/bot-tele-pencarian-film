@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === "production") {
     bot.setWebHook(webhookUrl);
 
     router.post("/webhook", (req, res) => {
+        console.log("webhook masuk:", req.body);
         bot.processUpdate(req.body);
         res.sendStatus(200);
     });

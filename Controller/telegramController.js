@@ -14,15 +14,15 @@ export const telegramController = (bot) => {
         console.log("Pesan masuk:", msg);
         switch (text) {
             case "/start":
-                return await startCommand(bot, chatId);
+                return startCommand(bot, chatId);
             case "/tulung":
-                return await tulungCommand(bot, chatId);
+                return tulungCommand(bot, chatId);
             case "/sahamaneh":
-                return await sahamanehCommand(bot, chatId);
+                return sahamanehCommand(bot, chatId);
             case "/nanda":
-                return await nandaCommand(bot, chatId);
+                return nandaCommand(bot, chatId);
             default:
-                return await searchMovieCommand(bot, chatId, text);
+                return searchMovieCommand(bot, chatId, text);
         }
 
      })

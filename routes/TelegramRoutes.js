@@ -1,6 +1,6 @@
 import express from "express";
 import TelegramBot from "node-telegram-bot-api";
-import { telegramController } from "../Controller/TelegramController.js";
+import { telegramController } from "../Controller/telegramController.js";
 
 const router = express.Router();
 

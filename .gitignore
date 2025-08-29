@@ -12,3 +12,4 @@ pids
 *.pid
 node_modules/
 *.seed
+.vercel

@@ -1,5 +1,6 @@
 export default async(bot, chatId) => {
     bot.sendMessage(chatId, "Nanda teh orang bogor, nu resep ngoding, sareng ngadamel aplikasi web. Ayeuna nuju diajar lewih jero ngeunaan pemrograman. Nu bade kenal langkung jero tiasa di tingali di (https://nandaportfolio.my.id). Hatur nuhun.\n\nKlik tombol ieu /start kanggo balik deui ka menu utama.", { parse_mode: "Markdown" });
+    
 };
 
 // export default async (bot, chatId) => {
